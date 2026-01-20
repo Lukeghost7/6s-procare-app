@@ -1,6 +1,8 @@
+import React from "react";
+
 export const metadata = {
   title: "6S ProCare Services",
-  description: "End-to-end home care & property management services",
+  description: "End-to-end home care & property management",
 };
 
 export default function RootLayout({
@@ -10,13 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        style={{
-          margin: 0,
-          fontFamily: "Arial, sans-serif",
-          backgroundColor: "#f5f7f6",
-        }}
-      >
+      <body style={{ margin: 0, fontFamily: "Arial, sans-serif" }}>
         {children}
       </body>
     </html>
