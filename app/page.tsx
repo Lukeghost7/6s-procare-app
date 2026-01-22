@@ -16,11 +16,11 @@ export default function Home() {
           <input placeholder="Email" style={styles.input} />
 
           <div style={{ display: 'flex', gap: 10 }}>
-            <button style={styles.primaryBtn} onClick={() => setRole('user')}>
-              User
+            <button style={styles.primaryBtn} onClick={() => setRole('client')}>
+              Client
             </button>
-            <button style={styles.secondaryBtn} onClick={() => setRole('admin')}>
-              Admin
+            <button style={styles.secondaryBtn} onClick={() => setRole('provider')}>
+              Provider
             </button>
           </div>
         </div>
@@ -37,47 +37,40 @@ const styles: Record<string, CSSProperties> = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#f4f6f8',
   },
   card: {
-    background: '#fff',
     padding: 30,
     borderRadius: 10,
-    width: 400,
-    boxShadow: '0 10px 25px rgba(0,0,0,0.1)',
+    backgroundColor: '#fff',
+    width: 350,
     textAlign: 'center',
   },
   title: {
-    fontSize: 28,
     marginBottom: 10,
   },
   subtitle: {
-    color: '#666',
     marginBottom: 20,
+    color: '#555',
   },
   input: {
     width: '100%',
     padding: 10,
     marginBottom: 15,
-    borderRadius: 6,
-    border: '1px solid #ccc',
   },
   primaryBtn: {
-    flex: 1,
-    padding: 10,
-    backgroundColor: '#0a58ca',
+    padding: '10px 15px',
+    backgroundColor: '#0070f3',
     color: '#fff',
     border: 'none',
-    borderRadius: 6,
+    borderRadius: 5,
     cursor: 'pointer',
   },
   secondaryBtn: {
-    flex: 1,
-    padding: 10,
-    backgroundColor: '#6c757d',
-    color: '#fff',
+    padding: '10px 15px',
+    backgroundColor: '#eaeaea',
     border: 'none',
-    borderRadius: 6,
+    borderRadius: 5,
     cursor: 'pointer',
   },
 };
